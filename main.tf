@@ -52,7 +52,7 @@ resource "aws_instance" "web" {
   tags = {
     Identity    = "terraform-training-duck"
     Creator     = "marojor"
-    Description = "Terraform training for the people"
+    Description = "Terraform via Github"
     Name        = "web ${count.index + 1}/${var.num_web_instances}"
   }
 }
