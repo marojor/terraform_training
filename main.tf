@@ -53,7 +53,7 @@ resource "aws_instance" "web" {
     Identity    = "terraform-training-duck"
     Creator     = "marojor"
     Description = "Terraform via Github"
-    Name        = "web ${count.index + 1}/${var.num_web_instances}"
+    Name        = "web terraform ${count.index + 1}/${var.num_web_instances}"
   }
 }
 
